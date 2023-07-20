@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  font-size: 14px;
+  margin: auto;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px rgb(231, 228, 228);
+  border-radius: 30px;
+}
+.container .result {
+  background: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%),
+    hsla(256, 72%, 46%, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: hsl(221, 100%, 96%);
+  position: relative;
+  width: 50%;
+  border-radius: 30px;
+}
+.score {
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  );
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.resultWord {
+  font-size: 15px;
+  color: hsl(241, 100%, 89%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+h1 {
+  font-size: 36px;
+}
+.score p {
+  font-size: 10px;
+}
+
+.content {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content h3 {
+  margin-bottom: 10px;
+}
+.content p {
+  font-size: 10px;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  left: 30px;
+}
+
+.container .summary {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+}
+.container .summary h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+.container .summary .box {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+}
+.container .summary .box .state {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.container .summary .box .state h4 {
+  display: flex;
+  font-size: 12px;
+  margin-left: 5px;
+}
+svg {
+  width: 10px;
+}
+
+.container .summary > div:nth-child(2) {
+  background-color: hsla(39, 69%, 83%, 0.1);
+  padding: 5px;
+  border-radius: 6px;
+}
+.container .summary > div:nth-child(2) h4 {
+  color: rgb(235, 188, 87);
+}
+.container .summary > div:nth-child(3) {
+  background-color: hsl(0, 63%, 61%, 0.1);
+  padding: 5px;
+  border-radius: 6px;
+}
+.container .summary > div:nth-child(3) h4 {
+  color: hsl(0, 100%, 67%);
+}
+.container .summary > div:nth-child(4) {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  padding: 5px;
+  border-radius: 6px;
+}
+.container .summary > div:nth-child(4) h4 {
+  color: hsl(166, 100%, 37%);
+}
+.container .summary > div:nth-child(5) {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  padding: 5px;
+  border-radius: 6px;
+}
+.container .summary > div:nth-child(5) h4 {
+  color: hsl(234, 85%, 45%);
+}
+.btn {
+  border-radius: 20px;
+  background: linear-gradient(
+    hsl(252, 86%, 80%),
+    hsl(241, 77%, 59%),
+    hsla(256, 72%, 46%, 1)
+  );
+  color: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
